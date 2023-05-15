@@ -31,8 +31,9 @@ def get_data():
 
     # 전체 데이터 보기
     all_data = cursor.fetchall()
-    print(all_data)
+    # print(all_data)
     con.close()  # db닫기
+    return all_data
 
 # 데이터 보기 함수
 def get_one_data(artist):
@@ -49,3 +50,9 @@ def get_one_data(artist):
     all_data = cursor.fetchall()
     con.close()  # db닫기
     return all_data
+
+# 테이블 삭제하는 함수
+
+# 테이블 생성하는 함수
+
+# 위 함수를 만들고 1번을 누르면 멜론 데이터 갱신하는것을 만들어 보자
